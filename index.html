@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Five9 Basic Test Page</title>
+
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding-top: 60px;
+      margin: 0;
+    }
+  </style>
+
+  <!-- Five9 Wrapper Loader -->
+  <script src="https://cdn.prod.us.five9.net/static/alpha/chat/wrapper/index.js"></script>
+</head>
+
+<body>
+  <h1>Five9 Chat Test</h1>
+  <p>This is a basic black-background test page.</p>
+  <p>The Five9 chat widget should load automatically.</p>
+
+  <!-- Five9 Init Script (moved to BODY as requested) -->
+  <script>
+    F9.Chat.Wrapper.init({
+      cdn: 'alpha-us',
+      integrationId: '6227e8d6b2944300f32d37a9',
+      chatDeploymentId: '3ada06db-a246-42e0-b32a-0e14d6a8bc14'
+    });
+  </script>
+
+</body>
+</html>
